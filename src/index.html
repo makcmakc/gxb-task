@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>My New Awesome Project</title>
+</head>
+<body>
+	
+	<div class="container">
+		<div class="calc">
+
+			<!-- /* DISPLAY */ -->
+			<div class="calc_display">
+				<div class="calc_title">
+					<h4>Enter an expression below</h4>
+				</div>
+
+				<div class="calc_expression">
+					<input type="text" value="y" class="expression-part y">
+					<input type="text" value="=" class="expression-part =">
+					<input type="text" value="2x" class="expression-part num">
+					<input type="text" value="-" class="expression-part operand">
+					<input type="text" value="1" class="expression-part x">
+				</div>
+  			</div>
+		
+			<!-- /* MAIN FIELD */ -->
+			<div class="calc_wrapper">
+
+				<!-- /* CHART SECTION */ -->
+				<div class="calc_chart-section">
+					<div class="chart-field">
+						<canvas></canvas>
+					</div>
+				</div>
+
+				<!-- /* CLIPBOARD */ -->
+			 	<div class="calc_buttons main_controls">
+					<div class="calc_buttons-row">
+			          <div data-val="C" class="calc_button clear main">
+			          	<span class="calc_color">C</span>
+			          </div>
+			          <div data-val="(" class="calc_button core">(</div>
+			          <div data-val=")" class="calc_button core">)</div>
+			          <div data-val="%" class="calc_button core">%</div>
+			          <div data-val="del" class="calc_button delete">
+			          	<span class="calc_color">Del</span>
+			          </div>
+			        </div>
+			        <!--end:row-->
+
+			        <div class="calc_buttons-row">
+			          <div data-val="^(1/" class="calc_button main-option core">
+			          	<span class="calc_color">&radic;</span> x
+			          </div>
+			          <div data-val="7" class="calc_button digit">7</div>
+			          <div data-val="8" class="calc_button digit">8</div>
+			          <div data-val="9" class="calc_button digit">9</div>
+			          <div data-val="/" class="calc_button core">&divide;</div>
+			        </div>
+			        <!--end:row-->
+
+			        <div class="calc_buttons-row">
+			          <div data-val="^" class="calc_button core">
+			            <span class="calc_text">x<span class="sup calc_color">y</span></span>
+			          </div>
+			          <div data-val="4" class="calc_button digit">4</div>
+			          <div data-val="5" class="calc_button digit">5</div>
+			          <div data-val="6" class="calc_button digit">6</div>
+			          <div data-val="*" class="calc_button core">&times;</div>
+			        </div>
+			        <!--end:row-->
+
+			        <div class="calc_buttons-row">
+			          <div data-val="!" class="calc_button core">
+			            <span class="calc_text">x<i class="calc_color">!</i></span>
+			          </div>
+			          <div data-val="1" class="calc_button digit">1</div>
+			          <div data-val="2" class="calc_button digit">2</div>
+			          <div data-val="3" class="calc_button digit">3</div>
+			          <div data-val="-" class="calc_button core">&#8211;</div>
+			        </div>
+			        <!--end:row-->
+
+			        <div class="calc_buttons-row">
+			          <div data-val="," class="calc_button core calc_color">
+			            <span class="calc_color">&#44;</span>
+			          </div>
+			          <div data-val="." class="calc_button core">
+			            <span class="calc_color">.</span>
+			          </div>
+			          <div data-val="0" class="calc_button digit">0</div>
+			          <div data-val="=" class="calc_button eval">
+			            <span class="calc_color">=</span>
+			          </div>
+			          <div data-val="+" class="calc_button core">+</div>
+			     	</div>
+
+				</div>	
+			</div>		
+		</div>
+
+	<div class="theme-button">
+		<a href="#" id="theme-switch" data-theme="night">Switch to Night Mode</a>
+	</div>
+
+</body>
+</html>
+
+
